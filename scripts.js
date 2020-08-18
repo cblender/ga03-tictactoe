@@ -48,12 +48,12 @@ class Game {
 
 const buttons = document.querySelectorAll("cell")
 
-for(i=0,i<buttons.length,i++){
+for(i=0;i<buttons.length;i++){
     buttons[i].addEventListener("click", move);
 }
 
 function move() {
-    
+    let v = 0;
 }
 
 // -- RESET BUTTON needs an on-click listener.  Make sure to include a confirmation step.
