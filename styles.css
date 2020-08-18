@@ -1,0 +1,23 @@
+.board {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background: black;
+}
+
+.X {
+    background: orange;
+}
+
+.O {
+    background: cyan;
+}
