@@ -18,9 +18,9 @@ const record = document.querySelector(".record");
 class Player {
     constructor(name){
         this.name = name;
-        this.moves = [];
-        this.wins = [];
-        this.losses = [];
+        this.moves = [];    // This array will hold a series of CELL IDENTIFIERS.  It is overwritten at the beginning of a new game.
+        this.wins = [];     // This will hold the names of defeated opponents.  Future: implement gamestate saving as well.
+        this.losses = [];   // Similar to wins.
     }
 
 }
@@ -35,7 +35,7 @@ class Game {
     constructor(player1, player2){
         this.player1 = player1;
         this.player2 = player2;
-
+        this.history = [];
     }
 }
 
@@ -45,6 +45,16 @@ class Game {
 // SETUP: EVENT LISTENERS
 // -- Each cell needs an on-click listener.  Set up using CSS classes (CELL IDENTIFIERS - A1 through C3).
 // -- The cell listeners should call a function that returns the identity of the cell clicked on.
+
+const buttons = document.querySelectorAll("cell")
+
+for(i=0,i<buttons.length,i++){
+    buttons[i].addEventListener("click", move);
+}
+
+function move() {
+    
+}
 
 // -- RESET BUTTON needs an on-click listener.  Make sure to include a confirmation step.
 // -- The reset listener should clear the current game.
