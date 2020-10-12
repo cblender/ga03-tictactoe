@@ -1,23 +1,41 @@
 .board {
-    display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 200px 200px 200px;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 5px;
 }
 
 .cell {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    background: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: black;
 }
 
 .X {
-    background: orange;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c23eacf8-e366-4118-ab5c-5a1255842a75/de44dk0-f367f584-c0ea-46aa-9675-46eeb964636e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYzIzZWFjZjgtZTM2Ni00MTE4LWFiNWMtNWExMjU1ODQyYTc1XC9kZTQ0ZGswLWYzNjdmNTg0LWMwZWEtNDZhYS05Njc1LTQ2ZWViOTY0NjM2ZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.kFME8zKls7_x2mEptLNoEMO6z57Oy7dhCeW7goKPSfM");
+  background-size: 169px 169px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .O {
-    background: cyan;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c23eacf8-e366-4118-ab5c-5a1255842a75/de6rs58-8d839451-f062-4b6d-bc5a-6342e1164fff.png/v1/fill/w_894,h_894,strp/white_circle_transparent_by_doomsp0rk_de6rs58-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMjgwIiwicGF0aCI6IlwvZlwvYzIzZWFjZjgtZTM2Ni00MTE4LWFiNWMtNWExMjU1ODQyYTc1XC9kZTZyczU4LThkODM5NDUxLWYwNjItNGI2ZC1iYzVhLTYzNDJlMTE2NGZmZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.wgWxweVzbGMpbmPDAkdh2L5Mu_Zm8wBShRtyxldiDvc");
+  background-size: 169px 169px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button {
+  height: 50px;
+  width: 269px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 20px;
 }
